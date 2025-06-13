@@ -8,17 +8,23 @@ let handler = async (m, { conn, args }) => {
     let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
     
     let txt = `
-Hola! Soy  *${botname}*  ٩(˘◡˘)۶
-Aquí tienes la lista de comandos
-╭┈ ↷
-│ᰔᩚ Cliente » @${userId.split('@')[0]}
-│❀ Modo » Publico
-│✦ Bot » ${(conn.user.jid == global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
-│ⴵ Activada » ${uptime}
-│✰ Usuarios » ${totalreg}
-│✧ Comandos » ${totalCommands}
-│🜸 Baileys » Multi Device
-╰─────────────────
+Hola ${taguser} Soy  *Kanna* ${(conn.user.jid == global.conn.user.jid ? 'OficialBot' : 'Prem-Bot')}
+
+╭━━I N F O-B O T━━
+┃Creador: Jose 
+┃Tiempo ${uptime}
+┃Baileys: Multi device.
+┃Base: Makima
+┃Registros: ${totalreg}
+╰━━━━━━━━━━━━━
+
+.       ╭ֹ┈ ⵿❀⵿ ┈╮ ㅤ
+ ╭ֹ┈ ⵿❀⵿ ┈╮INFO-USER
+┃┈➤ Cliente: ${nombre}
+┃┈➤ Rango: ${role}
+┃┈➤ Nivel: ${level}
+╰━━━━━━━━━━━━━
+
 Crea un *Sub-Bot* con tu número utilizando *#qr* o *#code*
 
 • :･ﾟ⊹˚• \`『 Info-Bot 』\` •˚⊹:･ﾟ•
